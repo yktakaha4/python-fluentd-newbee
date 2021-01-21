@@ -1,5 +1,7 @@
 # python-fluentd-newbie
 
+リポジトリ作った時はPythonでサーバを立てるつもりだったが、手間だったのでやめた
+
 こちらを参考に
 
 https://docs.fluentd.org/container-deployment/docker-compose
