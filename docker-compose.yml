@@ -17,7 +17,8 @@ services:
     volumes:
       - ./fluentd/conf:/fluentd/etc
     links:
-      - "elasticsearch"
+      - elasticsearch
+      - localstack
     ports:
       - "24224:24224"
       - "24224:24224/udp"
@@ -37,3 +38,11 @@ services:
       - "elasticsearch"
     ports:
       - "5601:5601"
+
+  localstack:
+    image: localstack/localstack:0.12.5
+    ports:
+      - "4566:4566"
+    environment:
+      SERVICES: s3
+      AWS_DEFAULT_REGION: ap-northeast-1
