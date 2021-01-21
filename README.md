@@ -2,4 +2,4 @@
 
 こちらを参考にさせて頂く
 
-https://qiita.com/ritorut18/items/4230ec6b524be15ede01
+https://docs.fluentd.org/container-deployment/docker-compose
